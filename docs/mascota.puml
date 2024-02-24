@@ -1,0 +1,31 @@
+@startuml mascota
+class Mascota
+class Alimento
+class Salud
+class Bañera
+class Pelota
+class Sentimiento
+class Ropa
+class Sombrero
+class Conocimiento
+class Libro
+class Entretenimiento
+class Consola
+class Accesiorio
+class Higiene
+class Locacion
+class Cuarto
+class Sala
+Class Patio
+
+Mascota o- Pelota
+Mascota o- Bañera
+Mascota o- Libro
+Mascota o- Consola
+Mascota o- Alimento
+Salud <|-- Alimento
+Accesiorio <|-- Ropa
+Accesiorio <|-- Sombrero
+Salud  <|-- Higiene
+#Conocimiento <|--
+@enduml 
