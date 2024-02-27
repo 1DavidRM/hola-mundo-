@@ -1,5 +1,9 @@
 @startuml mascota
-class Mascota
+class Mascota{
+    - salud: Salud 
+    +Comer()
+
+}
 class Alimento
 class Salud
 class Bañera
@@ -16,7 +20,8 @@ class Higiene
 class Locacion
 class Cuarto
 class Sala
-Class Patio
+class Patio
+class nose
 
 Mascota o- Pelota
 Mascota o- Bañera
@@ -27,5 +32,6 @@ Salud <|-- Alimento
 Accesiorio <|-- Ropa
 Accesiorio <|-- Sombrero
 Salud  <|-- Higiene
-#Conocimiento <|--
+Conocimiento *-- Mascota
+
 @enduml 
